@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areeba Fitness Centre</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*CSS Reset*/
+    body{
+        margin: 0px;
+        padding: 0px;
+        /* background: ; */
+        /* background-repeat: no-repeat; */
+        /* background-size: 100% 100%; */
+        /* background-attachment: fixed; */
+        width: 100%;
+        height: 96.8vh;
+        color: rgb(0, 0, 0);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: linear-gradient(135deg, rgb(94, 86, 86), rgb(255, 255, 255));
+    }
+    
+    .left{
+        /* border: 2px solid red; */
+        display: inline-block;
+        top: 20px;
+        left: 30px;
+        position: absolute;
+    }
+    .left img{
+        width: 100px;
+        text-align: center;
+    }
+    /* .left div{
+         line-height: 19px;
+         font-size: 26px;
+         text-align: center;
+    }      */
+    .mid{
+        border: 2px solid rgb(255, 255, 255);
+        display: block;
+        width: 45%;
+        margin:  20px auto;
+         
+    }
+    .right{
+        /* border: 2px solid green; */
+        display: inline-block;
+        top: 20px;
+        right: 20px;
+        position: absolute;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 0px 35px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(0, 0, 0);
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        padding: 4px 14px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* background: linear-gradient(135deg, #f76, #456); */
+    }
+    .btn:hover{
+        background-color: rgb(172, 153, 190);
+    }
+    .Container{
+        border: 2px solid rgb(236, 236, 236);
+        margin: auto;
+        padding: 70px 0px;
+        width: 40%;
+        border-radius: 10px;
+        margin-top: 60px;
+        background: linear-gradient(135deg, #ffff, #5465);
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 400px;
+        font-size: 12px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 17px;
+        border-radius: 8px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* background: linear-gradient(135deg, #345, #765); */
+    }
+    .Container h3{
+        text-align: center;
+    }
+    .Container button{
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+
+</style>
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+        <div class="left">
+           <img src="img/gym2.png" alt="">
+           <div>Areeba Fitness</div>
+        </div>
+        <!--Mid box for navigation bar -->
+        <div class="mid">
+           <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Fitness Exercise</a></li>
+            <li><a href="#">Contact us</a></li>
+           </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="Container">
+        <h3>Join the best gym in the town now</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>

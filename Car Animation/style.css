@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.sky{
+    background-image: url(bk3\ track.jpg);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+    .car{
+       height: 150px;
+       width: 450px;
+       background-image: url(Car\ without\ wheels.png);
+       background-size: cover;
+       position: absolute;
+       left: 450px;
+       top: 320px;
+       animation: Shake linear 1s infinite;
+    }
+
+.track{
+    height: 200vw;
+    width: 1400vw;
+    background-image: url(harry\ track.jpg);
+    /* background-size: cover; */
+    position: absolute;
+    top: 460px;
+    background-repeat: repeat-x;
+    animation: carMove linear 8s infinite;
+}
+.wheel{
+    height: 70px;
+    width: 70px;
+    background-image: url(Wheel.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 420px;
+    left: 494px;
+    animation: wheelRotation linear .56s infinite;
+}
+.wheel2{
+    height: 70px;
+    width: 70px;
+    background-image: url(Wheel.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 420px;
+    left: 770px;
+    animation: wheelRotation linear .56s infinite;
+}
+@keyframes wheelRotation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes carMove{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+ @keyframes Shake{
+    0%{
+               transform: translateY(-5px);
+    }
+    50%{
+       transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+ }
